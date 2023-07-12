@@ -1,0 +1,72 @@
+.answer-tweet-from {
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #ebeef0;
+}
+.answer-tweet-from label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.answer-tweet-from label img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.answer-tweet-from label textarea {
+  flex: 1;
+  border: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1.25rem;
+
+  resize: none;
+}
+.answer-tweet-from label textarea:focus {
+  outline: none;
+}
+
+.answer-tweet-from label textarea::placeholder {
+  color: #5b7083;
+}
+.answer-tweet-from button[type="submit"] {
+  margin-left: auto;
+  background: var(--twitter-blue);
+  border: none;
+
+  display: flex;
+  height: 40px;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  align-items: center;
+}
+.answer-tweet-from button[type="submit"]:hover {
+  filter: brightness(0.9);
+}
+
+.answer-tweet-from button[type="submit"] svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
+}
+@media (max-width: 780px) {
+  .answer-tweet-from label textarea {
+    font-size: 1rem;
+  }
+  .answer-tweet-from button[type="submit"] {
+    padding: 0.75rem;
+  }
+  .answer-tweet-from button[type="submit"] svg {
+    display: block;
+  }
+  .answer-tweet-from button[type="submit"] span {
+    display: none;
+  }
+}
