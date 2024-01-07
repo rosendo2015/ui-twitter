@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --twitter-blue: #1da1f2;
+  --twitter-blue: #1da1f3;
 }
 body {
   color: #0f1419;
@@ -24,5 +24,3 @@ button {
 a {
   color: inherit;
 }
-
-
